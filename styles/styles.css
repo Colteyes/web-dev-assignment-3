@@ -98,7 +98,9 @@ a :hover{
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
 
-header{
+header, img{
+  background-color: #E5AF42;
+  
   height: 150px;
   width: 100px;
   padding-bottom: 25px;
