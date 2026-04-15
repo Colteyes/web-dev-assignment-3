@@ -75,7 +75,7 @@ h2{
   color: white;
   cursor: pointer;
 }
-}
+
 a{
   text-decoration: none;
   color: black;
@@ -98,7 +98,13 @@ a :hover{
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
 
-
+header{
+  height: 150px;
+  width: 100px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-left: 25px;
+}
 
 
 
