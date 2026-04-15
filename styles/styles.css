@@ -23,7 +23,10 @@ body {
 }
 
 /* TO DO: all elements with the .flex class applied are to be made into flex-box containers. */
+.flex{
+  display: flex;
 
+}
 
  
 
@@ -41,9 +44,45 @@ body {
         - change the text colour to white, and 
         - change the cursor to pointer.
 */
+h1{
+  size: 48px;
+  text-align: center;
+}
+h2{
+  font-size: 36px;
+  padding-bottom: 12px;
+}
+.large-text{
+  font-size: 24px;
+}
+.fake-button{
+  background-color: #E5AF42;
+  text-align: center;
+  line-height: 3;
+  border: 1px solid black;
+}
 
+.fake-button :hover{
+  text-decoration: underline;
+  background-color: #4278e5;
+  color: white;
+  cursor: pointer;
+}
 
-
+.blue-hover :hover{
+  text-decoration: underline;
+  background-color: #4278e5;
+  color: white;
+  cursor: pointer;
+}
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a :hover{
+  text-decoration: underline;
+}
 
 
 
