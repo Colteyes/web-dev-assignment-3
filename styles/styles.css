@@ -48,7 +48,7 @@ body {
         - change the cursor to pointer.
 */
 h1{
-  size: 48px;
+  font-size: 48px;
   align-items: center;
 }
 h2{
