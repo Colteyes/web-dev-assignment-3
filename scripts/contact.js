@@ -6,8 +6,8 @@ const contactPage = document.getElementById("contact-page");
 const submitButton = document.getElementById("submit-button");
 
 submitButton.addEventListener('click', (event) => {
-  event.preventDefault;
+  event.preventDefault();
 
-  contactPage.innerHTML = '<p class="thank-you"> Thank you for your message!</p>'
-  
+  contactPage.innerHTML = '<p class="thank-you"> Thank you for your message!</p>';
+
 });
