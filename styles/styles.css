@@ -1,4 +1,4 @@
-/************* your name: 
+/************* your name: Ioanne gueco 
 
 INSTRUCTIONS:
 Comments starting with TO-DO have been included in this file to describe the needed styling: please translate these to the appropriate CSS declarations. 
@@ -46,7 +46,7 @@ body {
 */
 h1{
   size: 48px;
-  text-align: center;
+  align-items: center;
 }
 h2{
   font-size: 36px;
@@ -57,19 +57,20 @@ h2{
 }
 .fake-button{
   background-color: #E5AF42;
+  align-items: center;
   text-align: center;
   line-height: 3;
   border: 1px solid black;
 }
 
-.fake-button :hover{
+.fake-button:hover{
   text-decoration: underline;
   background-color: #4278e5;
   color: white;
   cursor: pointer;
 }
 
-.blue-hover :hover{
+.blue-hover:hover{
   text-decoration: underline;
   background-color: #4278e5;
   color: white;
@@ -80,7 +81,7 @@ a{
   text-decoration: none;
   color: black;
 }
-a :hover{
+a:hover{
   text-decoration: underline;
 }
 
@@ -98,17 +99,32 @@ a :hover{
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
 
-header, img{
-  background-color: #E5AF42;
-  
-  height: 150px;
-  width: 100px;
-  padding-bottom: 25px;
-  padding-top: 25px;
-  padding-left: 25px;
+
+header{
+  background-color: #E5AF42;  
+  height: 150px; 
+  margin-bottom: 25px;
 }
-
-
+header img{
+  width: 100px;
+  height: 100px;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+header h1{
+  flex: 1;
+  text-align: center;
+}
+main{
+  margin-bottom: 50px;
+}
+footer{ 
+  height: 60px;
+  background-color: #E5AF42;
+  font-weight: 200;
+  text-align: center;
+}
 
 
 /************* index page *************/
@@ -120,9 +136,28 @@ header, img{
     - each fake-button on this page will be 250px wide with 150px of space between them.
     - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
-
-
-
+.index img{
+  width: 300px;
+  margin-left: 25px;
+  margin-bottom: 50px;
+}
+.index h2{
+  line-height: 36px;
+}
+.index p{
+  margin-bottom: 12px;
+}
+.index .fake-button{
+  width: 250px;
+  justify-content: center;
+}
+.index .fake-button:first-child{
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.index .fake-button:last-of-type{
+  justify-content: center;
+}
 
 
 
@@ -140,10 +175,42 @@ header, img{
 
 */
 
+.booking-page{
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+}
 
+.day-selector{
+  justify-content: center;
+  margin-bottom: 12px;  
+}
 
+.day-selector li{
+  width: 60px;
+  margin-right: 20px;
+  border: 1px solid black;
+}
 
-
+.small-button{
+  border: 1px solid black;
+  padding: 5px;
+}
+.top-margin{
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+.day-selector li:last-child{
+  margin-right: 0;
+}
+.booking-page .fake-button{
+  width: 200px;
+  margin: 0 auto;
+}
+.clicked{
+  background-color: #E5AF42;
+}
 
 
 
@@ -161,6 +228,43 @@ header, img{
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
 
+.contact{
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .flex {
+  display: flex;
+  justify-content: center;
+}
 
+.contact label {
+  width: 150px;
+  text-align: right;
+  margin-right: 24px;
+}
+.contact textarea{
+  height: 150px;
 
+}
+.contact input,
+.contact textarea {
+  width: 300px;
+}
+.contact input,
+.contact textarea, 
+.contact button{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 24px;
+  font-size: 16px;
+  border: 1px solid black;
+  margin-bottom: 24px;
+}
 
+.contact button{
+  width: 306px;
+  padding: 5px;
+  margin-left: 174px;
+}
