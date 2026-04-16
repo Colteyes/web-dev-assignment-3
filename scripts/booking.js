@@ -48,8 +48,13 @@ clearButton.addEventListener('click', () => {
     }  
   });
   selectedDays = 0;//reset back to default values
-  dailyRate = 35;
+
+  halfButton.classList.remove('clicked');//put it back to default state with full button on
+  fullButton.classList.add('clicked');
+  dailyRate = 35; 
+
   costDisplay.textContent = 0;
+
 });
 
 
