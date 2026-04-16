@@ -13,7 +13,7 @@ const dayButtons = document.querySelectorAll(".day-selector li"); //selects all 
 const fullButton = document.getElementById("full"); //gets every other button with the ids
 const halfButton = document.getElementById("half");
 const costDisplay = document.getElementById("calculated-cost");
-const clearButton = document.getElementById("clear-button");;
+const clearButton = document.getElementById("clear-button");
 
 
 /********* colour change days of week *********/
