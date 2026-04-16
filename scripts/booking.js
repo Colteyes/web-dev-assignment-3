@@ -6,7 +6,7 @@
 
 
 let selectedDays = 0; //tracks how many days are selected
-let isFullDay = true; //whether or not full days was selected
+let isFullDay = true; //state tracks if full days is being used, not used for calculations, but I used it for testing if the buttons were working in the calculations
 let dailyRate = 35; //tracks the price between full and half days (Full days is on by default)
 
 const dayButtons = document.querySelectorAll(".day-selector li"); //selects all the buttons in the week list
@@ -42,11 +42,7 @@ dayButtons.forEach(button => { //for each button do this:
 // when the clear-button is clicked, the "clicked" class is removed from all days, any other relevant variables are reset, and the calculated cost is set to 0.
 
 clearButton.addEventListener('click', () => {
-  dayButtons.forEach(button => {//for each button on the week list:
-    if (button.classList.contains('clicked')){ //check if they were clicked on 
-      button.classList.remove('clicked')//if they were, remove it.
-    }  
-  });
+  dayButtons.forEach(button => button.classList.remove('clicked'));//removes the clicked state from the week list buttons
   selectedDays = 0;//reset back to default values
 
   halfButton.classList.remove('clicked');//put it back to default state with full button on
